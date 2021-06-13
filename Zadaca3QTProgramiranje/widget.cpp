@@ -112,6 +112,107 @@ Widget::Widget(QWidget *parent) :
     tekst0->setFont(*tekstFont);
     scena->addItem(tekst0);
 
+    QFont *ff = new QFont;
+    ff->setFamily("Times New Roman");
+    ff->setBold(true);
+    ff->setPointSize(12);
+    //Godine i mjeseci
+    QGraphicsTextItem *slucajevi= new QGraphicsTextItem("Slučajevi");
+    slucajevi->setFont(*ff);
+    slucajevi->setDefaultTextColor(Qt::blue);
+    slucajevi->setPos(20,-520);
+    scena->addItem(slucajevi);
+
+    QGraphicsTextItem *mjesec= new QGraphicsTextItem("Mjesec");
+    mjesec->setFont(*ff);
+    mjesec->setDefaultTextColor(Qt::blue);
+    mjesec->setPos(305,-25);
+    scena->addItem(mjesec);
+
+    QFont *fontMjeseci = new QFont;
+    fontMjeseci->setPointSize(10);
+    fontMjeseci->setFamily("Arial");
+
+
+    QGraphicsTextItem *juli2020= new QGraphicsTextItem("Juli");
+    juli2020->setFont(*fontMjeseci);
+    juli2020->setDefaultTextColor(Qt::blue);
+    juli2020->setPos(-370,0);
+    scena->addItem(juli2020);
+
+    QGraphicsTextItem *august2020= new QGraphicsTextItem("Aug");
+    august2020->setFont(*fontMjeseci);
+    august2020->setDefaultTextColor(Qt::blue);
+    august2020->setPos(-305,0);
+    scena->addItem(august2020);
+
+    QGraphicsTextItem *septembar2020= new QGraphicsTextItem("Sep");
+    septembar2020->setFont(*fontMjeseci);
+    septembar2020->setDefaultTextColor(Qt::blue);
+    septembar2020->setPos(-240,0);
+    scena->addItem(septembar2020);
+
+    QGraphicsTextItem *oktobar2020= new QGraphicsTextItem("Okt");
+    oktobar2020->setFont(*fontMjeseci);
+    oktobar2020->setDefaultTextColor(Qt::blue);
+    oktobar2020->setPos(-175,0);
+    scena->addItem(oktobar2020);
+
+    QGraphicsTextItem *novembar2020= new QGraphicsTextItem("Nov");
+    novembar2020->setFont(*fontMjeseci);
+    novembar2020->setDefaultTextColor(Qt::blue);
+    novembar2020->setPos(-115,0);
+    scena->addItem(novembar2020);
+
+    QGraphicsTextItem *decembar2020= new QGraphicsTextItem("Dec");
+    decembar2020->setFont(*fontMjeseci);
+    decembar2020->setDefaultTextColor(Qt::blue);
+    decembar2020->setPos(-50,0);
+    scena->addItem(decembar2020);
+
+    QGraphicsTextItem *januar2021= new QGraphicsTextItem("Jan");
+    januar2021->setFont(*fontMjeseci);
+    januar2021->setDefaultTextColor(Qt::blue);
+    januar2021->setPos(15,0);
+    scena->addItem(januar2021);
+
+    QGraphicsTextItem *februar2021= new QGraphicsTextItem("Feb");
+    februar2021->setFont(*fontMjeseci);
+    februar2021->setDefaultTextColor(Qt::blue);
+    februar2021->setPos(80,0);
+    scena->addItem(februar2021);
+
+    QGraphicsTextItem *mart2021= new QGraphicsTextItem("Mart");
+    mart2021->setFont(*fontMjeseci);
+    mart2021->setDefaultTextColor(Qt::blue);
+    mart2021->setPos(145,0);
+    scena->addItem(mart2021);
+
+    QGraphicsTextItem *april2021= new QGraphicsTextItem("April");
+    april2021->setFont(*fontMjeseci);
+    april2021->setDefaultTextColor(Qt::blue);
+    april2021->setPos(205,0);
+    scena->addItem(april2021);
+
+    QGraphicsTextItem *maj2021= new QGraphicsTextItem("Maj");
+    maj2021->setFont(*fontMjeseci);
+    maj2021->setDefaultTextColor(Qt::blue);
+    maj2021->setPos(265,0);
+    scena->addItem(maj2021);
+
+    QGraphicsTextItem *godina2020 = new QGraphicsTextItem("2020");
+    QGraphicsTextItem *godina2021 = new QGraphicsTextItem("2021");
+    godina2020->setFont(*fontMjeseci);
+    godina2020->setDefaultTextColor(Qt::blue);
+    godina2020->setPos(-200,15);
+    godina2021->setFont(*fontMjeseci);
+    godina2021->setDefaultTextColor(Qt::blue);
+    godina2021->setPos(160,15);
+    scena->addItem(godina2020);
+    scena->addItem(godina2021);
+
+
+
 
 
 

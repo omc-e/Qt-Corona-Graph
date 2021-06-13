@@ -64,6 +64,22 @@ private:
        QGraphicsTextItem *tekst10;
        QGraphicsTextItem *tekst0;
 
+       QGraphicsTextItem *slucajevi;
+
+       QGraphicsTextItem *mjesec;
+
+       QGraphicsTextItem *juli2020;
+       QGraphicsTextItem *august2020;
+       QGraphicsTextItem *septembar2020;
+       QGraphicsTextItem *oktobar2020;
+       QGraphicsTextItem *novembar2020;
+       QGraphicsTextItem *decembar2020;
+       QGraphicsTextItem *januar2021;
+       QGraphicsTextItem *februar2021;
+       QGraphicsTextItem *mart2021;
+       QGraphicsTextItem *april2021;
+       QGraphicsTextItem *maj2021;
+
 };
 
 #endif // WIDGET_H
