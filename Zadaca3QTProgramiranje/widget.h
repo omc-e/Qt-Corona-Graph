@@ -123,6 +123,8 @@ private:
 
        QGraphicsTextItem *ime;
 
+       QGraphicsPathItem *pit;
+
 };
 
 #endif // WIDGET_H

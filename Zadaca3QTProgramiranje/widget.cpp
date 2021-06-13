@@ -11,6 +11,10 @@ Widget::Widget(QWidget *parent) :
     scena ->setBackgroundBrush(Qt::gray);
 
      ui->graphicsView->setScene(scena);
+     QBrush cetka1(Qt::white);
+     QBrush cetka2 (Qt::green,Qt::Dense5Pattern);
+     //Morao sam da stavim cetku 2 zelenu jer na zastavi imam samo dvije boje
+     //Pomijesat ce mi se s ostalim elementima
 
     QPen crna_olovka(Qt::black);
     crna_olovka.setWidth(3);
@@ -18,6 +22,23 @@ Widget::Widget(QWidget *parent) :
     QPen bijela_olovka(Qt::white);
 
     painter.setPen(crna_olovka);
+
+    QPen plava_olovka (Qt::blue);
+     QPolygonF grafikon;
+     grafikon << QPointF(-335,0) << QPointF(-335,-13)
+              << QPointF(-285,-10) << QPointF(-235,-54)
+              << QPointF(-185,-158) << QPointF(-135,-338)
+              << QPointF(-85,-332) << QPointF(-35,-99)
+              << QPointF(45,-55) << QPointF(105,-51)
+              << QPointF(165,-273) << QPointF(225,-495) << QPointF(285,-122)
+              << QPointF(285,0);
+
+     scena->addPolygon(grafikon);
+
+     QPainterPath path;
+     path.addPolygon(grafikon);
+
+   pit=scena->addPath(path,plava_olovka,cetka2);
 
     //koordinatni sistem
     xosa=scena->addLine(0,0,385,0,crna_olovka);
@@ -216,13 +237,14 @@ Widget::Widget(QWidget *parent) :
     godina2021->setPos(160,15);
     scena->addItem(godina2020);
     scena->addItem(godina2021);
+    //Polygon
 
 
 
     //visina linije se raucna na nacin da broj na skali podijelimo
     //sa 50px i dobijemo 24
     //onda broj zarazenih podijelimo sa 24 i toliko px ce biti linija visine
-    QPen plava_olovka (Qt::blue);
+
     juni_l=scena->addLine(-335,-7,-335,0,plava_olovka);
     juli_l=scena->addLine(-285,-4.5,-285,0,plava_olovka);
     august_l=scena->addLine(-235,-49,-235,0,plava_olovka);
@@ -237,7 +259,7 @@ Widget::Widget(QWidget *parent) :
     maj_l=scena->addLine(285,-117.8,285,0,plava_olovka);
 
     //elipse
-    QBrush cetka1(Qt::white);
+
     juni_e=scena->addEllipse(-338,-12,5,5,bijela_olovka,cetka1);
     juli_e=scena->addEllipse(-288,-9,5,5,bijela_olovka,cetka1);
     august_e=scena->addEllipse(-238,-53,5,5,bijela_olovka,cetka1);
@@ -334,17 +356,6 @@ Widget::Widget(QWidget *parent) :
     ime->setPos(-340,-378);
     scena->addItem(ime);
 
-   //Polygon
-    QPolygonF grafikon;
-    grafikon << QPointF(-335,0) << QPointF(-335,-13)
-             << QPointF(-285,-10) << QPointF(-235,-54)
-             << QPointF(-185,-158) << QPointF(-135,-338)
-             << QPointF(-85,-332) << QPointF(-35,-99)
-             << QPointF(45,-55) << QPointF(105,-51)
-             << QPointF(165,-273) << QPointF(225,-495) << QPointF(285,-122)
-             << QPointF(285,0);
-
-    scena->addPolygon(grafikon);
 
 
 
