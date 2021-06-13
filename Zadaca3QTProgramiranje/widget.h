@@ -80,6 +80,20 @@ private:
        QGraphicsTextItem *april2021;
        QGraphicsTextItem *maj2021;
 
+       //linije
+       QGraphicsLineItem *juni_l;
+       QGraphicsLineItem *juli_l;
+       QGraphicsLineItem *august_l;
+       QGraphicsLineItem *septembar_l;
+       QGraphicsLineItem *oktobar_l;
+       QGraphicsLineItem *novembar_l;
+       QGraphicsLineItem *decembar_l;
+       QGraphicsLineItem *januar_l;
+       QGraphicsLineItem *februar_l;
+       QGraphicsLineItem *mart_l;
+       QGraphicsLineItem *april_l;
+       QGraphicsLineItem *maj_l;
+
 };
 
 #endif // WIDGET_H
