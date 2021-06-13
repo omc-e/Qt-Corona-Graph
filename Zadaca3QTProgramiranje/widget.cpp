@@ -328,7 +328,11 @@ Widget::Widget(QWidget *parent) :
     majSlucaj->setPos(260,-520);
     scena->addItem(majSlucaj);
 
-
+    QGraphicsTextItem *ime= new QGraphicsTextItem("Emsar Omic");
+    ime->setFont(QFont("Times New Roman",12,QFont::Bold));
+    ime->setDefaultTextColor(Qt::white);
+    ime->setPos(-340,-378);
+    scena->addItem(ime);
 
 
 

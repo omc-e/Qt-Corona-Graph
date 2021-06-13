@@ -121,6 +121,8 @@ private:
        QGraphicsTextItem *aprilSlucaj;
        QGraphicsTextItem *majSlucaj;
 
+       QGraphicsTextItem *ime;
+
 };
 
 #endif // WIDGET_H
