@@ -108,6 +108,19 @@ private:
        QGraphicsEllipseItem *april_e;
        QGraphicsEllipseItem *maj_e;
 
+       //brojevi slucajeva iznad elipsi
+       QGraphicsTextItem *juliSlucaj;
+       QGraphicsTextItem *augustSlucaj;
+       QGraphicsTextItem *septembarSlucaj;
+       QGraphicsTextItem *oktobarSlucaj;
+       QGraphicsTextItem *novembarSlucaj;
+       QGraphicsTextItem *decembarSlucaj;
+       QGraphicsTextItem *januarSlucaj;
+       QGraphicsTextItem *februarSlucaj;
+       QGraphicsTextItem *martSlucaj;
+       QGraphicsTextItem *aprilSlucaj;
+       QGraphicsTextItem *majSlucaj;
+
 };
 
 #endif // WIDGET_H

@@ -251,6 +251,83 @@ Widget::Widget(QWidget *parent) :
     april_e=scena->addEllipse(222,-438,5,5,bijela_olovka,cetka1);
     maj_e=scena->addEllipse(282,-500,5,5,bijela_olovka,cetka1);
 
+    //broj slucajeva
+    QFont *sFont=new QFont;
+    sFont->setPointSize(10);
+    sFont->setFamily("Arial");
+
+    QGraphicsTextItem *juniSlucaj=new QGraphicsTextItem("130");
+    juniSlucaj->setFont(*sFont);
+    juniSlucaj->setDefaultTextColor(Qt::white);
+    juniSlucaj->setPos(-350,-35);
+    scena->addItem(juniSlucaj);
+
+    QGraphicsTextItem *juliSlucaj=new QGraphicsTextItem("156");
+    juliSlucaj->setFont(*sFont);
+    juliSlucaj->setDefaultTextColor(Qt::white);
+    juliSlucaj->setPos(-300,-37);
+    scena->addItem(juliSlucaj);
+
+    QGraphicsTextItem *augustSlucaj=new QGraphicsTextItem("501");
+    augustSlucaj->setFont(*sFont);
+    augustSlucaj->setDefaultTextColor(Qt::white);
+    augustSlucaj->setPos(-250,-50);
+    scena->addItem(augustSlucaj);
+
+    QGraphicsTextItem *septembarSlucaj=new QGraphicsTextItem("1424");
+    septembarSlucaj->setFont(*sFont);
+    septembarSlucaj->setDefaultTextColor(Qt::white);
+    septembarSlucaj->setPos(-205,-90);
+    scena->addItem(septembarSlucaj);
+
+    QGraphicsTextItem *oktobarSlucaj=new QGraphicsTextItem("3424");
+    oktobarSlucaj->setFont(*sFont);
+    oktobarSlucaj->setDefaultTextColor(Qt::white);
+    oktobarSlucaj->setPos(-155,-170);
+    scena->addItem(oktobarSlucaj);
+
+    QGraphicsTextItem *novembarSlucaj=new QGraphicsTextItem("5275");
+    novembarSlucaj->setFont(*sFont);
+    novembarSlucaj->setDefaultTextColor(Qt::white);
+    novembarSlucaj->setPos(-105,-250);
+    scena->addItem(novembarSlucaj);
+
+    QGraphicsTextItem *decembarSlucaj=new QGraphicsTextItem("5932");
+    decembarSlucaj->setFont(*sFont);
+    decembarSlucaj->setDefaultTextColor(Qt::white);
+    decembarSlucaj->setPos(-55,-275);
+    scena->addItem(decembarSlucaj);
+
+    QGraphicsTextItem *januarSlucaj=new QGraphicsTextItem("6228");
+    januarSlucaj->setFont(*sFont);
+    januarSlucaj->setDefaultTextColor(Qt::white);
+    januarSlucaj->setPos(25,-290);
+    scena->addItem(januarSlucaj);
+
+    QGraphicsTextItem *februarSlucaj=new QGraphicsTextItem("6063");
+    februarSlucaj->setFont(*sFont);
+    februarSlucaj->setDefaultTextColor(Qt::white);
+    februarSlucaj->setPos(90,-280);
+    scena->addItem(februarSlucaj);
+
+    QGraphicsTextItem *martSlucaj=new QGraphicsTextItem("7531");
+    martSlucaj->setFont(*sFont);
+    martSlucaj->setDefaultTextColor(Qt::white);
+    martSlucaj->setPos(150,-340);
+    scena->addItem(martSlucaj);
+
+    QGraphicsTextItem *aprilSlucaj=new QGraphicsTextItem("10323");
+    aprilSlucaj->setFont(*sFont);
+    aprilSlucaj->setDefaultTextColor(Qt::white);
+    aprilSlucaj->setPos(200,-460);
+    scena->addItem(aprilSlucaj);
+
+    QGraphicsTextItem *majSlucaj=new QGraphicsTextItem("11865");
+    majSlucaj->setFont(*sFont);
+    majSlucaj->setDefaultTextColor(Qt::white);
+    majSlucaj->setPos(260,-520);
+    scena->addItem(majSlucaj);
+
 
 
 
