@@ -236,6 +236,20 @@ Widget::Widget(QWidget *parent) :
     april_l=scena->addLine(225,-430.125,225,0,plava_olovka);
     maj_l=scena->addLine(285,-494.375,285,0,plava_olovka);
 
+    //elipse
+    QBrush cetka1(Qt::white);
+    juni_e=scena->addEllipse(-338,-13,5,5,bijela_olovka,cetka1);
+    juli_e=scena->addEllipse(-288,-14,5,5,bijela_olovka,cetka1);
+    august_e=scena->addEllipse(-238,-27,5,5,bijela_olovka,cetka1);
+    septembar_e=scena->addEllipse(-188,-67,5,5,bijela_olovka,cetka1);
+    oktobar_e=scena->addEllipse(-138,-149,5,5,bijela_olovka,cetka1);
+    novembar_e=scena->addEllipse(-88,-227,5,5,bijela_olovka,cetka1);
+    decembar_e=scena->addEllipse(-38,-255,5,5,bijela_olovka,cetka1);
+    januar_e=scena->addEllipse(42,-267,5,5,bijela_olovka,cetka1);
+    februar_e=scena->addEllipse(103,-259,5,5,bijela_olovka,cetka1);
+    mart_e=scena->addEllipse(162,-320,5,5,bijela_olovka,cetka1);
+    april_e=scena->addEllipse(222,-438,5,5,bijela_olovka,cetka1);
+    maj_e=scena->addEllipse(282,-500,5,5,bijela_olovka,cetka1);
 
 
 

@@ -94,6 +94,20 @@ private:
        QGraphicsLineItem *april_l;
        QGraphicsLineItem *maj_l;
 
+       //elipse item za tacke kod mjeseci
+       QGraphicsEllipseItem *juni_e;
+       QGraphicsEllipseItem *juli_e;
+       QGraphicsEllipseItem *august_e;
+       QGraphicsEllipseItem *septembar_e;
+       QGraphicsEllipseItem *oktobar_e;
+       QGraphicsEllipseItem *novembar_e;
+       QGraphicsEllipseItem *decembar_e;
+       QGraphicsEllipseItem *januar_e;
+       QGraphicsEllipseItem *februar_e;
+       QGraphicsEllipseItem *mart_e;
+       QGraphicsEllipseItem *april_e;
+       QGraphicsEllipseItem *maj_e;
+
 };
 
 #endif // WIDGET_H
