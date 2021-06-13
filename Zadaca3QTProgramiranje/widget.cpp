@@ -52,61 +52,61 @@ Widget::Widget(QWidget *parent) :
     tekst1->setFont(*tekstFont);
     scena->addItem(tekst1);
 
-    QGraphicsTextItem *tekst2 = new QGraphicsTextItem("1200");
+    QGraphicsTextItem *tekst2 = new QGraphicsTextItem("300");
     tekst2->setDefaultTextColor(Qt::white);
     tekst2->setPos(-20,-70);
     tekst2->setFont(*tekstFont);
     scena->addItem(tekst2);
 
-    QGraphicsTextItem *tekst3 = new QGraphicsTextItem("2400");
+    QGraphicsTextItem *tekst3 = new QGraphicsTextItem("600");
     tekst3->setDefaultTextColor(Qt::white);
     tekst3->setPos(-20,-120);
     tekst3->setFont(*tekstFont);
     scena->addItem(tekst3);
 
-    QGraphicsTextItem *tekst4 = new QGraphicsTextItem("3600");
+    QGraphicsTextItem *tekst4 = new QGraphicsTextItem("900");
     tekst4->setDefaultTextColor(Qt::white);
     tekst4->setPos(-20,-170);
     tekst4->setFont(*tekstFont);
     scena->addItem(tekst4);
 
-    QGraphicsTextItem *tekst5 = new QGraphicsTextItem("4800");
+    QGraphicsTextItem *tekst5 = new QGraphicsTextItem("1200");
     tekst5->setDefaultTextColor(Qt::white);
     tekst5->setPos(-20,-220);
     tekst5->setFont(*tekstFont);
     scena->addItem(tekst5);
 
-    QGraphicsTextItem *tekst6 = new QGraphicsTextItem("6000");
+    QGraphicsTextItem *tekst6 = new QGraphicsTextItem("1500");
     tekst6->setDefaultTextColor(Qt::white);
     tekst6->setPos(-20,-270);
     tekst6->setFont(*tekstFont);
     scena->addItem(tekst6);
 
-    QGraphicsTextItem *tekst7 = new QGraphicsTextItem("7200");
+    QGraphicsTextItem *tekst7 = new QGraphicsTextItem("1800");
     tekst7->setDefaultTextColor(Qt::white);
     tekst7->setPos(-20,-320);
     tekst7->setFont(*tekstFont);
     scena->addItem(tekst7);
 
-    QGraphicsTextItem *tekst8 = new QGraphicsTextItem("8400");
+    QGraphicsTextItem *tekst8 = new QGraphicsTextItem("2100");
     tekst8->setDefaultTextColor(Qt::white);
     tekst8->setPos(-22,-370);
     tekst8->setFont(*tekstFont);
     scena->addItem(tekst8);
 
-    QGraphicsTextItem *tekst9 = new QGraphicsTextItem("9600");
+    QGraphicsTextItem *tekst9 = new QGraphicsTextItem("2400");
     tekst9->setDefaultTextColor(Qt::white);
     tekst9->setPos(-22,-420);
     tekst9->setFont(*tekstFont);
     scena->addItem(tekst9);
 
-    QGraphicsTextItem *tekst10 = new QGraphicsTextItem("10800");
+    QGraphicsTextItem *tekst10 = new QGraphicsTextItem("2700");
     tekst10->setDefaultTextColor(Qt::white);
     tekst10->setPos(-22,-470);
     tekst10->setFont(*tekstFont);
     scena->addItem(tekst10);
 
-    QGraphicsTextItem *tekst0 = new QGraphicsTextItem("12000");
+    QGraphicsTextItem *tekst0 = new QGraphicsTextItem("3000");
     tekst0->setDefaultTextColor(Qt::white);
     tekst0->setPos(-22,-520);
     tekst0->setFont(*tekstFont);
@@ -223,109 +223,109 @@ Widget::Widget(QWidget *parent) :
     //sa 50px i dobijemo 24
     //onda broj zarazenih podijelimo sa 24 i toliko px ce biti linija visine
     QPen plava_olovka (Qt::blue);
-    juni_l=scena->addLine(-335,-5.40,-335,0,plava_olovka);
-    juli_l=scena->addLine(-285,-6.5,-285,0,plava_olovka);
-    august_l=scena->addLine(-235,-20.8,-235,0,plava_olovka);
-    septembar_l=scena->addLine(-185,-59.3,-185,0,plava_olovka);
-    oktobar_l=scena->addLine(-135,-142.6,-135,0,plava_olovka);
-    novembar_l=scena->addLine(-85,-219.79,-85,0,plava_olovka);
-    decembar_l=scena->addLine(-35,-247.16,-35,0,plava_olovka);
-    januar_l=scena->addLine(45,-259.9,45,0,plava_olovka);
-    februar_l=scena->addLine(105,-252.62,105,0,plava_olovka);
-    mart_l=scena->addLine(165,-313.79,165,0,plava_olovka);
-    april_l=scena->addLine(225,-430.125,225,0,plava_olovka);
-    maj_l=scena->addLine(285,-494.375,285,0,plava_olovka);
+    juni_l=scena->addLine(-335,-7,-335,0,plava_olovka);
+    juli_l=scena->addLine(-285,-4.5,-285,0,plava_olovka);
+    august_l=scena->addLine(-235,-49,-235,0,plava_olovka);
+    septembar_l=scena->addLine(-185,-154.6,-185,0,plava_olovka);
+    oktobar_l=scena->addLine(-135,-334.8,-135,0,plava_olovka);
+    novembar_l=scena->addLine(-85,-328,-85,0,plava_olovka);
+    decembar_l=scena->addLine(-35,-95.1,-35,0,plava_olovka);
+    januar_l=scena->addLine(45,-51.8,45,0,plava_olovka);
+    februar_l=scena->addLine(105,-47.5,105,0,plava_olovka);
+    mart_l=scena->addLine(165,-269.5,165,0,plava_olovka);
+    april_l=scena->addLine(225,-491.5,225,0,plava_olovka);
+    maj_l=scena->addLine(285,-117.8,285,0,plava_olovka);
 
     //elipse
     QBrush cetka1(Qt::white);
-    juni_e=scena->addEllipse(-338,-13,5,5,bijela_olovka,cetka1);
-    juli_e=scena->addEllipse(-288,-14,5,5,bijela_olovka,cetka1);
-    august_e=scena->addEllipse(-238,-27,5,5,bijela_olovka,cetka1);
-    septembar_e=scena->addEllipse(-188,-67,5,5,bijela_olovka,cetka1);
-    oktobar_e=scena->addEllipse(-138,-149,5,5,bijela_olovka,cetka1);
-    novembar_e=scena->addEllipse(-88,-227,5,5,bijela_olovka,cetka1);
-    decembar_e=scena->addEllipse(-38,-255,5,5,bijela_olovka,cetka1);
-    januar_e=scena->addEllipse(42,-267,5,5,bijela_olovka,cetka1);
-    februar_e=scena->addEllipse(103,-259,5,5,bijela_olovka,cetka1);
-    mart_e=scena->addEllipse(162,-320,5,5,bijela_olovka,cetka1);
-    april_e=scena->addEllipse(222,-438,5,5,bijela_olovka,cetka1);
-    maj_e=scena->addEllipse(282,-500,5,5,bijela_olovka,cetka1);
+    juni_e=scena->addEllipse(-338,-12,5,5,bijela_olovka,cetka1);
+    juli_e=scena->addEllipse(-288,-9,5,5,bijela_olovka,cetka1);
+    august_e=scena->addEllipse(-238,-53,5,5,bijela_olovka,cetka1);
+    septembar_e=scena->addEllipse(-188,-157,5,5,bijela_olovka,cetka1);
+    oktobar_e=scena->addEllipse(-138,-337,5,5,bijela_olovka,cetka1);
+    novembar_e=scena->addEllipse(-88,-331,5,5,bijela_olovka,cetka1);
+    decembar_e=scena->addEllipse(-38,-98,5,5,bijela_olovka,cetka1);
+    januar_e=scena->addEllipse(42,-54,5,5,bijela_olovka,cetka1);
+    februar_e=scena->addEllipse(103,-50,5,5,bijela_olovka,cetka1);
+    mart_e=scena->addEllipse(162,-272,5,5,bijela_olovka,cetka1);
+    april_e=scena->addEllipse(222,-494,5,5,bijela_olovka,cetka1);
+    maj_e=scena->addEllipse(282,-120,5,5,bijela_olovka,cetka1);
 
     //broj slucajeva
     QFont *sFont=new QFont;
     sFont->setPointSize(10);
     sFont->setFamily("Arial");
 
-    QGraphicsTextItem *juniSlucaj=new QGraphicsTextItem("130");
+    QGraphicsTextItem *juniSlucaj=new QGraphicsTextItem("42");
     juniSlucaj->setFont(*sFont);
     juniSlucaj->setDefaultTextColor(Qt::white);
     juniSlucaj->setPos(-350,-35);
     scena->addItem(juniSlucaj);
 
-    QGraphicsTextItem *juliSlucaj=new QGraphicsTextItem("156");
+    QGraphicsTextItem *juliSlucaj=new QGraphicsTextItem("27");
     juliSlucaj->setFont(*sFont);
     juliSlucaj->setDefaultTextColor(Qt::white);
-    juliSlucaj->setPos(-300,-37);
+    juliSlucaj->setPos(-300,-30);
     scena->addItem(juliSlucaj);
 
-    QGraphicsTextItem *augustSlucaj=new QGraphicsTextItem("501");
+    QGraphicsTextItem *augustSlucaj=new QGraphicsTextItem("346");
     augustSlucaj->setFont(*sFont);
     augustSlucaj->setDefaultTextColor(Qt::white);
-    augustSlucaj->setPos(-250,-50);
+    augustSlucaj->setPos(-250,-75);
     scena->addItem(augustSlucaj);
 
-    QGraphicsTextItem *septembarSlucaj=new QGraphicsTextItem("1424");
+    QGraphicsTextItem *septembarSlucaj=new QGraphicsTextItem("928");
     septembarSlucaj->setFont(*sFont);
     septembarSlucaj->setDefaultTextColor(Qt::white);
-    septembarSlucaj->setPos(-205,-90);
+    septembarSlucaj->setPos(-205,-180);
     scena->addItem(septembarSlucaj);
 
-    QGraphicsTextItem *oktobarSlucaj=new QGraphicsTextItem("3424");
+    QGraphicsTextItem *oktobarSlucaj=new QGraphicsTextItem("2009");
     oktobarSlucaj->setFont(*sFont);
     oktobarSlucaj->setDefaultTextColor(Qt::white);
-    oktobarSlucaj->setPos(-155,-170);
+    oktobarSlucaj->setPos(-155,-360);
     scena->addItem(oktobarSlucaj);
 
-    QGraphicsTextItem *novembarSlucaj=new QGraphicsTextItem("5275");
+    QGraphicsTextItem *novembarSlucaj=new QGraphicsTextItem("1968");
     novembarSlucaj->setFont(*sFont);
     novembarSlucaj->setDefaultTextColor(Qt::white);
-    novembarSlucaj->setPos(-105,-250);
+    novembarSlucaj->setPos(-105,-350);
     scena->addItem(novembarSlucaj);
 
-    QGraphicsTextItem *decembarSlucaj=new QGraphicsTextItem("5932");
+    QGraphicsTextItem *decembarSlucaj=new QGraphicsTextItem("571");
     decembarSlucaj->setFont(*sFont);
     decembarSlucaj->setDefaultTextColor(Qt::white);
-    decembarSlucaj->setPos(-55,-275);
+    decembarSlucaj->setPos(-55,-120);
     scena->addItem(decembarSlucaj);
 
-    QGraphicsTextItem *januarSlucaj=new QGraphicsTextItem("6228");
+    QGraphicsTextItem *januarSlucaj=new QGraphicsTextItem("311");
     januarSlucaj->setFont(*sFont);
     januarSlucaj->setDefaultTextColor(Qt::white);
-    januarSlucaj->setPos(25,-290);
+    januarSlucaj->setPos(25,-80);
     scena->addItem(januarSlucaj);
 
-    QGraphicsTextItem *februarSlucaj=new QGraphicsTextItem("6063");
+    QGraphicsTextItem *februarSlucaj=new QGraphicsTextItem("285");
     februarSlucaj->setFont(*sFont);
     februarSlucaj->setDefaultTextColor(Qt::white);
-    februarSlucaj->setPos(90,-280);
+    februarSlucaj->setPos(90,-75);
     scena->addItem(februarSlucaj);
 
-    QGraphicsTextItem *martSlucaj=new QGraphicsTextItem("7531");
+    QGraphicsTextItem *martSlucaj=new QGraphicsTextItem("1617");
     martSlucaj->setFont(*sFont);
     martSlucaj->setDefaultTextColor(Qt::white);
-    martSlucaj->setPos(150,-340);
+    martSlucaj->setPos(145,-295);
     scena->addItem(martSlucaj);
 
-    QGraphicsTextItem *aprilSlucaj=new QGraphicsTextItem("10323");
+    QGraphicsTextItem *aprilSlucaj=new QGraphicsTextItem("2949");
     aprilSlucaj->setFont(*sFont);
     aprilSlucaj->setDefaultTextColor(Qt::white);
-    aprilSlucaj->setPos(200,-460);
+    aprilSlucaj->setPos(205,-515);
     scena->addItem(aprilSlucaj);
 
-    QGraphicsTextItem *majSlucaj=new QGraphicsTextItem("11865");
+    QGraphicsTextItem *majSlucaj=new QGraphicsTextItem("707");
     majSlucaj->setFont(*sFont);
     majSlucaj->setDefaultTextColor(Qt::white);
-    majSlucaj->setPos(260,-520);
+    majSlucaj->setPos(270,-140);
     scena->addItem(majSlucaj);
 
     QGraphicsTextItem *ime= new QGraphicsTextItem("Emsar Omic");
@@ -333,6 +333,18 @@ Widget::Widget(QWidget *parent) :
     ime->setDefaultTextColor(Qt::white);
     ime->setPos(-340,-378);
     scena->addItem(ime);
+
+   //Polygon
+    QPolygonF grafikon;
+    grafikon << QPointF(-335,0) << QPointF(-335,-13)
+             << QPointF(-285,-10) << QPointF(-235,-54)
+             << QPointF(-185,-158) << QPointF(-135,-338)
+             << QPointF(-85,-332) << QPointF(-35,-99)
+             << QPointF(45,-55) << QPointF(105,-51)
+             << QPointF(165,-273) << QPointF(225,-495) << QPointF(285,-122)
+             << QPointF(285,0);
+
+    scena->addPolygon(grafikon);
 
 
 
