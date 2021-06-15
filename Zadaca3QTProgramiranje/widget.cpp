@@ -38,6 +38,10 @@ Widget::Widget(QWidget *parent) :
      QPainterPath path;
      path.addPolygon(grafikon);
 
+
+
+
+
    pit=scena->addPath(path,plava_olovka,cetka2);
 
     //koordinatni sistem
@@ -132,6 +136,9 @@ Widget::Widget(QWidget *parent) :
     tekst0->setPos(-22,-520);
     tekst0->setFont(*tekstFont);
     scena->addItem(tekst0);
+
+
+
 
     QFont *ff = new QFont;
     ff->setFamily("Times New Roman");
@@ -242,8 +249,8 @@ Widget::Widget(QWidget *parent) :
 
 
     //visina linije se raucna na nacin da broj na skali podijelimo
-    //sa 50px i dobijemo 24
-    //onda broj zarazenih podijelimo sa 24 i toliko px ce biti linija visine
+    //sa 50px i dobijemo x
+    //onda broj zarazenih podijelimo sa x i toliko px ce biti linija visine
 
     juni_l=scena->addLine(-335,-7,-335,0,plava_olovka);
     juli_l=scena->addLine(-285,-4.5,-285,0,plava_olovka);
@@ -357,7 +364,12 @@ Widget::Widget(QWidget *parent) :
     scena->addItem(ime);
 
 
+    QPixmap image(":/images/flag.png");
 
+    QGraphicsPixmapItem *slikica = scena->addPixmap(image);
+
+    slikica->setPos(-385,525);
+    scena->addItem(slikica);
 
 }
 

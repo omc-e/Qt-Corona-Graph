@@ -124,6 +124,8 @@ private:
        QGraphicsTextItem *ime;
 
        QGraphicsPathItem *pit;
+QGraphicsPixmapItem *slikica;
+
 
 };
 
