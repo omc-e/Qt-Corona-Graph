@@ -23,6 +23,11 @@ Widget::Widget(QWidget *parent) :
 
     painter.setPen(crna_olovka);
 
+    QPixmap image(":/images/flag.png");
+     QGraphicsPixmapItem *item=scena->addPixmap(image);
+     item->setPos(-385,-525);
+     scena->addItem(item);
+
     QPen plava_olovka (Qt::blue);
      QPolygonF grafikon;
      grafikon << QPointF(-335,0) << QPointF(-335,-13)
@@ -364,12 +369,6 @@ Widget::Widget(QWidget *parent) :
     scena->addItem(ime);
 
 
-    QPixmap image(":/images/flag.png");
-
-    QGraphicsPixmapItem *slikica = scena->addPixmap(image);
-
-    slikica->setPos(-385,525);
-    scena->addItem(slikica);
 
 }
 
